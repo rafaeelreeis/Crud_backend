@@ -1,0 +1,63 @@
+### GET todos os professores
+GET http://localhost:3000/professores HTTP/1.1
+Content-Type: application/json
+
+### GET professor por ID
+GET http://localhost:3000/professores/1 HTTP/1.1
+Content-Type: application/json
+
+### POST - Inserir novo professor
+POST http://localhost:3000/professores HTTP/1.1
+Content-Type: application/json
+
+{
+  "nome": "João da Silva",
+  "email": "joao@ifc.edu.br"
+}
+
+### PUT - Atualizar professor
+PUT http://localhost:3000/professores/1 HTTP/1.1
+Content-Type: application/json
+
+{
+  "nome": "João Atualizado",
+  "email": "joao.novo@ifc.edu.br"
+}
+
+### DELETE - Excluir professor
+DELETE http://localhost:3000/professores/1 HTTP/1.1
+Content-Type: application/json
+
+### GET todos os cursos
+GET http://localhost:3000/cursos HTTP/1.1
+Content-Type: application/json
+
+### GET curso por ID
+GET http://localhost:3000/cursos/1 HTTP/1.1
+Content-Type: application/json
+
+### POST - Inserir novo curso
+POST http://localhost:3000/cursos HTTP/1.1
+Content-Type: application/json
+
+{
+  "nome": "Ciência da Computação",
+  "sigla": "CC",
+  "descricao": "Curso superior de informática",
+  "id_coordenador": 1
+}
+
+### PUT - Atualizar curso
+PUT http://localhost:3000/cursos/1 HTTP/1.1
+Content-Type: application/json
+
+{
+  "nome": "Engenharia de Software",
+  "sigla": "ESW",
+  "descricao": "Curso atualizado",
+  "id_coordenador": 1
+}
+
+### DELETE - Excluir curso
+DELETE http://localhost:3000/cursos/1 HTTP/1.1
+Content-Type: application/json
